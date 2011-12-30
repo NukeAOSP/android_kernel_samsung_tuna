@@ -841,7 +841,15 @@ static int __init zram_init(void)
 {
 	int ret, dev_id;
 
-	if (num_devices > max_num_devices) {
+	/*
+	 * Module parameter not specified by user. Use default
+	 * value as defined during kernel config.
+	 */
+	if (zram_num_devices == 0) {
+		zram_num_devices = CONFIG_ZRAM_NUM_DEVICES;
+	}
+
+	if (zram_num_devices > max_num_devices) {
 		pr_warning("Invalid value for num_devices: %u\n",
 				num_devices);
 		ret = -EINVAL;
