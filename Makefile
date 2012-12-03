@@ -1,8 +1,8 @@
 VERSION = 3
 PATCHLEVEL = 0
-SUBLEVEL = 53
-EXTRAVERSION =
-NAME = Sneaky Weasel
+SUBLEVEL = 54
+EXTRAVERSION = +
+NAME = Xylon
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
