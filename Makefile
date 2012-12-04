@@ -2,7 +2,7 @@ VERSION = 3
 PATCHLEVEL = 0
 SUBLEVEL = 54
 EXTRAVERSION = +
-NAME = Berserk
+NAME = Xylon
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
@@ -372,8 +372,7 @@ KBUILD_CFLAGS   := -Wall -Wno-address -Wundef -Wstrict-prototypes -Wno-trigraphs
 		   -pipe -marm -mfloat-abi=softfp \
 		   -mcpu=cortex-a9 \
 		   -fmodulo-sched -fmodulo-sched-allow-regmoves \
-		   -funswitch-loops -fpredictive-commoning -fgcse-after-reload \
-		   -mno-unaligned-access
+		   -funswitch-loops -fpredictive-commoning -fgcse-after-reload
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL := -O2 -mtune=cortex-a9 -march=armv7-a -mfpu=neon -ftree-vectorize
 KBUILD_AFLAGS   := -D__ASSEMBLY__
