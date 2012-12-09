@@ -418,8 +418,6 @@ config OMAP_REGULATOR_VOLTCHANGE
 	help
 	  Allow voltage changes for regulators.
 
-endmenu
-
 config OMAP_OCFREQ_1400
 	bool "Enable 1.4GHz MPU frequency slot"
 	depends on OMAP_OVERRIDE_MPUTRIM && OMAP_SMARTREFLEX_CUSTOM_SENSOR
