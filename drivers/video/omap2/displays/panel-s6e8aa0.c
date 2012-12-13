@@ -72,7 +72,7 @@ enum {
 
 /* contrast tweak from morfic - Trinity Kernel */
 static int contrast = -7;
-module_param(contrast, int, 0755);
+module_param(contrast, int, 0666);
 EXPORT_SYMBOL(contrast);
 
 
