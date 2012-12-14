@@ -28,10 +28,6 @@
 #include "omap_opp_data.h"
 #include "pm.h"
 
-#ifdef CONFIG_LIVE_OC
-#include <linux/live_oc.h>
-#endif
-
 /*
  * Structures containing OMAP4430 voltage supported and various
  * voltage dependent data for each VDD.
@@ -454,10 +450,6 @@ int __init omap4_opp_init(void)
 		/*if (omap4_has_mpu_1_5ghz())
 			omap4_mpu_opp_enable(1500000000);*/
 	}
-
-#ifdef CONFIG_LIVE_OC
-	liveoc_init();
-#endif
 
 	return r;
 }
