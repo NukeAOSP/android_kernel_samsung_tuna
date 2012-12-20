@@ -370,6 +370,7 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Wno-format-security \
                    -fmodulo-sched -fmodulo-sched-allow-regmoves \
                    -funswitch-loops -fpredictive-commoning -fgcse-after-reload \
+                   -ftree-vectorize -floop-interchange -floop-strip-mine -floop-block \
 		   -fno-delete-null-pointer-checks \
 		   -pipe -marm -mfloat-abi=softfp \
 		   -mcpu=cortex-a9 \
